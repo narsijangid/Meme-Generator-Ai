@@ -25,7 +25,7 @@ function Home() {
 
     const fetchProducts = async () => {
         try {
-            const url = "http://localhost:8080/products";
+            const url = "https://meme-generator-ai-1.onrender.com/products";
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
