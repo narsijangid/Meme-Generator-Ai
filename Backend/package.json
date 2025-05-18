@@ -4,25 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",      // <-- use node here for production
+    "dev": "nodemon index.js"      // <-- use nodemon for local development
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-"dependencies": {
-  "@google/generative-ai": "^0.24.0",
-  "bcrypt": "^5.1.1",
-  "bcryptjs": "^3.0.2",
-  "body-parser": "^1.20.3",
-  "cors": "^2.8.5",
-  "dotenv": "^16.5.0",
-  "express": "^4.21.2",
-  "joi": "^17.13.3",
-  "jsonwebtoken": "^9.0.2",
-  "mongoose": "^8.4.1",
-  "puppeteer": "^24.6.1",
-  "socket.io": "^4.8.1",
-  "nodemon": "^3.0.2"
-}
-
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "puppeteer": "^24.6.1",
+    "socket.io": "^4.8.1",
+    "nodemon": "^3.0.2"
+  }
 }
