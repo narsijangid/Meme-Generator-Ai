@@ -22,7 +22,10 @@ app.get('/ping', (req, res) => {
 
 // Middlewares
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://meme-generator-ai-flax.vercel.app', // or '*'
+  credentials: true,
+}));
 
 // Routes
 app.use('/auth', AuthRouter);
